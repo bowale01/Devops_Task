@@ -2,6 +2,8 @@
 DevOps Technical Assessment
 Deploy to Kubernetes cluster one of the applications prescribed in this task ("Applications set"
 part).
+
+
 Some requirements for the application deployment:
 1. It should be highly available and scalable: The application has to be fault-tolerant regarding
 the loss of one cluster node and automatically scalable depending on the CPU load available
@@ -16,28 +18,33 @@ outside of the private network
 can also choose to demonstrate anything else you think is useful to do with this application on
 a Kubernetes deployment, be creative and surprise us, but most importantly, have fun with the
 task.
+
+
 Tech stack to use:
-1. Kubernetes is the only requirement as a platform. To manage the deployment descriptors
-you can use any other tool you prefer as long as you can argue for it, can be a set of
-YAML files or a system like Helm or anything in between.
-2. GitHub. The application should be visible together with Kubernetes specs and Dockerfile
-in GitHub repository. You might be able to fork the project from one of the applications.
-Please keep Amboss as a name out of it, we don’t want to make it too easy for other
-candidates in the future =) Alternatively provide us with a ZipFile of your work.
+    1. Kubernetes is the only requirement as a platform. To manage the deployment descriptors
+    you can use any other tool you prefer as long as you can argue for it, can be a set of
+    YAML files or a system like Helm or anything in between.
+    2. GitHub. The application should be visible together with Kubernetes specs and Dockerfile
+    in GitHub repository. You might be able to fork the project from one of the applications.
+
+
+
 Applications set:
-1. It might be your own pet project application which could be accessed by HTTP or
-anything else you fancy deploying as long as it has a HTTP/REST interface, so can also
-be the Nginx Test site.
-2. Django app
-3. Node.js app (you need to correct npm commands in Dockerfile in this case)
-Follow-up questions that you can think about or answer already, but they also serve
-as an example of what you can expect as discussion in the follow-up
-presentation:
-1. Where and how did you set up the Kubernetes cluster? Why did you consider this
-option? How would you handle the cluster setup next time you'll need a new one? 2.
-How would you improve the application setup?
-a. Would you go with CI/CD pipeline? If so, which one?
-b. Would you template the setup? If so, which tool would you choose for that? c.
-How would you monitor the application? What kind of metrics would you choose
-and what monitoring system would you pick up?
-3. How would you scale the application setup across multiple regions?
+     1. It might be your own pet project application which could be accessed by HTTP or
+      anything else you fancy deploying as long as it has a HTTP/REST interface, so can also
+      be the Nginx Test site.
+    2. Django app
+    3. Node.js app (you need to correct npm commands in Dockerfile in this case)
+
+    
+        Follow-up questions that you can think about or answer already, but they also serve
+        as an example of what you can expect as discussion in the follow-up
+        presentation:
+           1. Where and how did you set up the Kubernetes cluster? Why did you consider this
+              option? How would you handle the cluster setup next time you'll need a new one? 2.
+              How would you improve the application setup?
+             a. Would you go with CI/CD pipeline? If so, which one?
+             b. Would you template the setup? If so, which tool would you choose for that?
+             c.How would you monitor the application? What kind of metrics would you choose
+             and what monitoring system would you pick up?
+          3. How would you scale the application setup across multiple regions?
