@@ -7,9 +7,9 @@ spec:
     server: 'https://kubernetes.default.svc'
     namespace: 'default'
   source:
-    repoURL: 'https://github.com/your-username/nginx-manifests.git'  # Replace with your GitHub repository URL
-    path: '/'  # Assuming your YAML manifests are in the root directory of the repository
-    targetRevision: 'main'  # Or specify the branch/tag you want to deploy
+    repoURL: https://github.com/debolek/Debolek_Devops_Task.git  # Replace with your GitHub repository URL
+    path: /Users/debolek/Desktop/Debolek_Devops/Debolek_Devops_Task/argocd-app-config/prod
+    targetRevision: HEAD
   project: 'default'
   syncPolicy:
     automated:
