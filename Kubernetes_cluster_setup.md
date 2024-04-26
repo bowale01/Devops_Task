@@ -64,5 +64,9 @@ The YAML files that we will deploy will search for these worker nodes based on a
 
 
 
+Installing ARGO CD 
+Argo CD is a declarative, GitOps CD tool for Kubernetes. It automates the deployment of applications to Kubernetes clusters based on configuration files stored in Git repositories
+
+
 
 Pod Replicas: Define a Kubernetes Deployment with multiple replicas for your Nginx application. Kubernetes will automatically distribute these replicas across the available worker nodes in the cluster. Additionally, you can configure Horizontal Pod Autoscaling (HPA) based on CPU utilization to automatically scale the number of pod replicas up or down to meet demand.
