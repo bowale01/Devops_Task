@@ -35,6 +35,25 @@ check the nodes
 
 <img width="539" alt="Screenshot 2024-04-26 at 15 50 02" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/f33e153e-4ca6-47f6-b77d-4ac07c465331">
 
+<img width="1043" alt="Screenshot 2024-04-26 at 16 01 34" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/e2033938-63aa-4413-9436-8da91ab29612">
+
+
+Label Nodes 
+
+When i want to deploy the choosen application pods which is nginx, i don't want them to deploy to my control-plane, so i will label out second and third nodes as "worker"  with this below command 
+
+kubectl label node <node_name> node-role.kubernetes.io/worker=worker
+
+kubectl label node k8cluster-m02 node-role.kubernetes.io/worker=workernode
+
+kubectl label node k8cluster-m03 node-role.kubernetes.io/worker=workernode
+
+
+<img width="1008" alt="Screenshot 2024-04-26 at 16 14 02" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/52ba2e43-ad03-42db-9a1e-f0eb87a91157">
+
+
+
+
 
 
 Pod Replicas: Define a Kubernetes Deployment with multiple replicas for your Nginx application. Kubernetes will automatically distribute these replicas across the available worker nodes in the cluster. Additionally, you can configure Horizontal Pod Autoscaling (HPA) based on CPU utilization to automatically scale the number of pod replicas up or down to meet demand.
