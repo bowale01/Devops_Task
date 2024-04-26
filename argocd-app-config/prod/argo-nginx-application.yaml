@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx-test-site
-spec:
+  spec:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: 'default'
@@ -10,11 +10,9 @@ spec:
     repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
     path: argocd-app-config/prod
     targetRevision: HEAD
-  destination:
-    server: 'https://kubernetes.default.svc'
-    namespace: default
   syncPolicy:
     automated:
       prune: true
     syncOptions:
       - ApplyOutOfSyncOnly=true
+
