@@ -1,7 +1,6 @@
 
 
-
- Install Minikube on Mac CLI
+Install Minikube on Mac CLI
 
 Step 1 :- To install minikube on x86–64 mac OS, run the following two commands:-
 
