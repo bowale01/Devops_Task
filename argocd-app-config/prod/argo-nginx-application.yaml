@@ -7,8 +7,8 @@ spec:
     server: 'https://kubernetes.default.svc'
     namespace: 'default'
   source:
-    repoURL: https://github.com/debolek/Debolek_Devops_Task.git  # Replace with your GitHub repository URL
-    path: /Users/debolek/Desktop/Debolek_Devops/Debolek_Devops_Task/argocd-app-config/prod
+    repoURL: https://github.com/debolek/Debolek_Devops_Task.git
+    path: prod
     targetRevision: HEAD
   project: 'default'
   syncPolicy:
