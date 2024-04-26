@@ -6,15 +6,15 @@ spec:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: 'default'
-source:
-  repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
-  path: argocd-app-config/prod
-  targetRevision: HEAD
-destination:
-  server: 'https://kubernetes.default.svc'
-  namespace: default
-syncPolicy:
-  automated:
-    prune: true
-  syncOptions:
-    - ApplyOutOfSyncOnly=true
+  source:
+    repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
+    path: argocd-app-config/prod
+    targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
