@@ -31,6 +31,10 @@ Worker Nodes: Start with at least two worker nodes in your Kubernetes cluster. Y
 
 minikube start --nodes 3 -p k8cluster 
 
+check the nodes 
+
+<img width="539" alt="Screenshot 2024-04-26 at 15 50 02" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/f33e153e-4ca6-47f6-b77d-4ac07c465331">
+
 
 
 Pod Replicas: Define a Kubernetes Deployment with multiple replicas for your Nginx application. Kubernetes will automatically distribute these replicas across the available worker nodes in the cluster. Additionally, you can configure Horizontal Pod Autoscaling (HPA) based on CPU utilization to automatically scale the number of pod replicas up or down to meet demand.
