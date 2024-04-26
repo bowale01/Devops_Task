@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-test-site
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: 'default'
+  source:
+    repoURL: 'https://github.com/your-username/nginx-manifests.git'  # Replace with your GitHub repository URL
+    path: '/'  # Assuming your YAML manifests are in the root directory of the repository
+    targetRevision: 'main'  # Or specify the branch/tag you want to deploy
+  project: 'default'
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
