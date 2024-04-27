@@ -30,6 +30,8 @@ spec:
       resources:
         - nginx-deployment.yaml
         - index-html-configmap.yaml
+        - index-html.yaml
         - nginx-service.yaml
         - nginx-pvc.yaml
+
 
