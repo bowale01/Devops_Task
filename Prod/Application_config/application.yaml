@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/debolek/Debolek_Devops_Task.git
     targetRevision: HEAD
-    path: Prod
+    path: Application_config
   destination:
     server: https://kubernetes.default.svc
     namespace: default
