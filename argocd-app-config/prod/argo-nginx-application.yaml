@@ -3,16 +3,60 @@ kind: Application
 metadata:
   name: nginx-test-site
 spec:
-  project: default    # Set the project name here
   destination:
-    server: 'https://kubernetes.default.svc'
-    namespace: 'default'
+    server: https://kubernetes.default.svc
+    namespace: argocd
   source:
     repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
-    path: argocd-app-config/prod
+    path: prod
     targetRevision: HEAD
+  project: default
   syncPolicy:
     automated:
       prune: true
-    syncOptions:
-      - ApplyOutOfSyncOnly=true
+      selfHeal: true
+  spec:
+    destination:
+      server: https://kubernetes.default.svc
+      namespace: default
+    source:
+      repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
+      path: prod
+      targetRevision: HEAD
+    project: default
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
+    resources:
+      - apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+          name: nginx-deployment
+        spec:
+          replicas: 3
+          selector:
+            matchLabels:
+              app: nginx
+          template:
+            metadata:
+              labels:
+                app: nginx
+            spec:
+              containers:
+                - name: nginx
+                  image: nginx
+                  ports:
+                    - containerPort: 80
+                  readinessProbe:
+                    httpGet:
+                      path: /
+                      port: 80
+                    initialDelaySeconds: 5
+                    periodSeconds: 10
+                  livenessProbe:
+                    httpGet:
+                      path: /
+                      port: 80
+                    initialDelaySeconds: 10
+                    periodSeconds: 20
