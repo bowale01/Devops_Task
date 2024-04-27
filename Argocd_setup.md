@@ -47,7 +47,7 @@ sudo lsof -i :8080
 
 kill -9 <PID>
 
-kubectl port-forward service/argocd-server -n argocd 8888:443
+kubectl port-forward service/argocd-server -n argocd 8080:443
 
 
 
