@@ -24,14 +24,12 @@ spec:
       # Add each YAML file separately
       # Make sure to adjust the paths accordingly
       # Add any additional resources as needed
-      # YAML files should be relative to the path specified above
+      # YAML files should be relative to the path specified abov
       # If any of the YAML files depend on each other (e.g., Deployment references a ConfigMap),
       # make sure to list them in the correct order to ensure proper deployment
-      resources:
-        - nginx-deployment.yaml
-        - index-html-configmap.yaml
-        - index-html.yaml
-        - nginx-service.yaml
-        - nginx-pvc.yaml
-
-
+resources:
+   - nginx-deployment.yaml
+   - index-html-configmap.yaml
+   - index-html.yaml
+   - nginx-service.yaml
+   - nginx-pvc.yaml
