@@ -9,7 +9,7 @@ spec:
     namespace: 'default'
   source:
     repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
-    path: prod
+    path: argocd-app-config/prod
     targetRevision: HEAD
   syncPolicy:
     automated:
