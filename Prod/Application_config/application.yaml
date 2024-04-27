@@ -15,7 +15,7 @@ spec:
       - index-html-configmap.yaml
       - nginx-service.yaml
       - nginx-pvc.yaml
-  destination:
+    destination:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
