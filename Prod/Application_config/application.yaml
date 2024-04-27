@@ -7,18 +7,18 @@ spec:
   project: default # Set the project name here
 
   source:
-    repoURL: 'https://github.com/debolek/Debolek_Devops_Task.git'
+    repoURL: https://github.com/debolek/Debolek_Devops_Task.git
     targetRevision: HEAD
-    path: 
-   
-
-
+    path: prod
   destination:
-    server: 'https://kubernetes.default.svc'
-    
+    server: https://kubernetes.default.svc
+    namespace: myapp
 
   syncPolicy:
-    automated:
-      prune: true
     syncOptions:
-      - ApplyOutOfSyncOnly=true
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
+    
