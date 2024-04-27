@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
 spec:
   rules:
-  - host: nginxdebo.com  # Replace with your desired hostname
+  - host: nginx.com  # Replace with your desired hostname
     http:
       paths:
       - path: /
