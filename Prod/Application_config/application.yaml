@@ -4,47 +4,21 @@ metadata:
   name: nginx-test-site
   namespace: argocd
 spec:
-  project: default # Set the project name here
-
+  project: default
   source:
     repoURL: https://github.com/debolek/Debolek_Devops_Task.git
     targetRevision: HEAD
-    path: Application_config # Path to the directory containing other YAML files
+    path: Application_config
     # List of resources to be deployed
-    # Add each YAML file separately
-    # Make sure to adjust the paths accordingly
-    # Add any additional resources as needed
-    # YAML files should be relative to the path specified above
-    # If any of the YAML files depend on each other (e.g., Deployment references a ConfigMap),
-    # make sure to list them in the correct order to ensure proper deployment
-    # For example:
     resources:
       - nginx-deployment.yaml
       - index-html-configmap.yaml
       - nginx-service.yaml
       - nginx-pvc.yaml
-
   destination:
     server: https://kubernetes.default.svc
     namespace: default
-
   syncPolicy:
     automated:
       selfHeal: true
       prune: true
-
-      # List of resources to be deployed
-      # Add each YAML file separately
-      # Make sure to adjust the paths accordingly
-      # Add any additional resources as needed
-      # YAML files should be relative to the path specified above
-      # If any of the YAML files depend on each other (e.g., Deployment references a ConfigMap),
-      # make sure to list them in the correct order to ensure proper deployment
-      resources:
-        - nginx-deployment.yaml
-        - index-html-configmap.yaml
-        - index-html.yaml
-        - nginx-service.yaml
-        - nginx-pvc.yaml
-
-
