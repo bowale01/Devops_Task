@@ -2,7 +2,8 @@ Install Minikube on Mac CLI
 
 Step 1 :- To install minikube on x86–64 mac OS, run the following two commands:-
 
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 sudo install minikube-darwin-amd64 /usr/local/bin/minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 
+sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 
 Step 2 :- Use the following command to start a cluster:-
 
