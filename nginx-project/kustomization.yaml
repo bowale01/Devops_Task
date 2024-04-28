@@ -6,6 +6,7 @@ namePrefix: kustomize-
 resources:
 #- nginx-deployment.yaml
 #- nginx-svc.yaml
+- nginxdebo.yaml
 
 commonAnnotations:
   channel: justopensource
