@@ -4,7 +4,7 @@ metadata:
   labels:
     app: nginx
   name: nginx
-  namespace: nginx-app
+  namespace: default
 spec:
   ports:
   - port: 80
