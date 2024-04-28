@@ -50,7 +50,6 @@ kubectl label node minikube-m03 node-role.kubernetes.io/worker=workernode
 <img width="759" alt="Screenshot 2024-04-28 at 19 28 25" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/6b44713a-4c5b-4fac-927a-284860327388">
 
 
-<img width="1008" alt="Screenshot 2024-04-26 at 16 14 02" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/52ba2e43-ad03-42db-9a1e-f0eb87a91157">
 
 
 
