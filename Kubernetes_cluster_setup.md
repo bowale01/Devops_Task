@@ -44,9 +44,10 @@ When i want to deploy the choosen application pods which is nginx, i don't want 
 
 kubectl label node <node_name> node-role.kubernetes.io/worker=worker
 
-kubectl label node k8cluster-m02 node-role.kubernetes.io/worker=workernode
+kubectl label node minikube-m02 node-role.kubernetes.io/worker=workernode
 
-kubectl label node k8cluster-m03 node-role.kubernetes.io/worker=workernode
+kubectl label node minikube-m03 node-role.kubernetes.io/worker=workernode
+<img width="759" alt="Screenshot 2024-04-28 at 19 28 25" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/6b44713a-4c5b-4fac-927a-284860327388">
 
 
 <img width="1008" alt="Screenshot 2024-04-26 at 16 14 02" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/52ba2e43-ad03-42db-9a1e-f0eb87a91157">
