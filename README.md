@@ -1,6 +1,6 @@
 # Debolek_Devops_Task
 DevOps Technical Assessment
-Deploy to Kubernetes cluster one of the applications prescribed in this task ("Applications set"
+Deploy to Kubernete cluster one of the applications prescribed in this task ("Applications set"
 part).
 
 
