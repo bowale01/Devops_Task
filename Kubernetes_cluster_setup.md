@@ -29,13 +29,12 @@ Pods: You need multiple replicas of the Nginx pod to achieve fault tolerance and
 Worker Nodes: Start with at least two worker nodes in your Kubernetes cluster. You can scale up the number of nodes based on your application's resource requirements and expected traffic. Kubernetes provides features like automatic node scaling to help manage node resources efficiently.
 
 
-minikube start --nodes 3 -p k8cluster 
+minikube start --nodes 3 -p k8cluster
 
 check the nodes 
 
-<img width="539" alt="Screenshot 2024-04-26 at 15 50 02" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/f33e153e-4ca6-47f6-b77d-4ac07c465331">
+<img width="756" alt="Screenshot 2024-04-28 at 19 34 11" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/a91e2b79-b885-4fb2-a7dc-2c4f478cc47e">
 
-<img width="1043" alt="Screenshot 2024-04-26 at 16 01 34" src="https://github.com/debolek/Debolek_Devops_Task/assets/37187773/e2033938-63aa-4413-9436-8da91ab29612">
 
 
 Label Nodes 
