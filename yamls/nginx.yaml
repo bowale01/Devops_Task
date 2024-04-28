@@ -5,7 +5,7 @@ metadata:
     app: nginx
   name: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: nginx
@@ -17,3 +17,8 @@ spec:
       containers:
       - image: nginx
         name: nginx
+        resources:
+          requests:
+            cpu: "100m"   # Request 100 milli CPUs
+          limits:
+            cpu: "200m"   # Limit to 200 milli CPUs
