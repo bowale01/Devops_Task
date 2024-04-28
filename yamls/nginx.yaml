@@ -17,8 +17,3 @@ spec:
       containers:
       - image: nginx
         name: nginx
-        resources:
-          requests:
-            cpu: "100m"   # Request 100 milli CPUs
-          limits:
-            cpu: "200m"   # Limit to 200 milli CPUs
