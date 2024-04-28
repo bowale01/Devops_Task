@@ -55,10 +55,4 @@ kubectl label node minikube-m03 node-role.kubernetes.io/worker=workernode
 
 The YAML files that we will deploy will search for these worker nodes based on a key:value label pair using this below command 
 
- kubectl label nodes <node_name> role=worker
-
- kubectl label node k8cluster-m02 role=workernode
-
- kubectl label node k8cluster-m03 role=workernode
-
 
