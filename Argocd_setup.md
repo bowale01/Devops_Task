@@ -10,11 +10,15 @@ $ ./get_helm.sh
 Installing ARGO CD 
 Argo CD is a declarative, GitOps CD tool for Kubernetes. It automates the deployment of applications to Kubernetes clusters based on configuration files stored in Git repositories
 
-Create Argo wrokflow 
-kubectl apply -n argo -f https://github.com/argoproj/argo-work
+helm repo add argo https://argoproj.github.io/argo
+cd 
 
-Create a namespace called argo   
-    kubectl create ns argocd
+Create Argo wrokflow 
+kubectl apply -n argocd -f https://github.com/argoproj/argo-work
+
+Create a namespace called argocd   
+
+kubectl create namespace argocd
 
 installing the chart 
 
