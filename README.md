@@ -32,9 +32,7 @@ Tech stack to use:
 Applications set:
      1. It might be your own pet project application which could be accessed by HTTP or
       anything else you fancy deploying as long as it has a HTTP/REST interface, so can also
-      be the Nginx Test site.
-    2. Django app
-    3. Node.js app (you need to correct npm commands in Dockerfile in this case)
+      be the Nginx Test site
 
     
         Follow-up questions that you can think about or answer already, but they also serve
