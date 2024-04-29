@@ -47,7 +47,7 @@ kubectl -n argocd get secret **************** -o jsonpath="{.data.password}" | b
 
 After reaching the UI the first time you can login with username: admin and the random password generated during the installation. You can find the password by running:
 
-you might need to run this incase if you get some error when trying to enter your argocd GUI after some hours 
+you might need to run this incase if you get some error when trying to enter your argocd GUI after some hours due to the fact that  i use a minkube cluster which is for test purpose 
 
 sudo lsof -i :8080
 
