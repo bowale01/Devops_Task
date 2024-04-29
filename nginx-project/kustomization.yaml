@@ -8,7 +8,8 @@ resources:
 #- nginx-svc.yaml
 - nginx-configmap.yaml
 - nginx-deployments.yaml 
-- nginx-services.yaml
+#- nginx-services.yaml
+- svc.yaml
 
 commonAnnotations:
   channel: justopensource
