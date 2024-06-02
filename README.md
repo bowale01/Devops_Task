@@ -1,4 +1,4 @@
-# Debolek_Devops_Task
+# Devops_Task
 DevOps Technical Assessment
 DevOps Technical Assessment
 This is not a test but rather a conversation starter. Have fun with the task, and we can’t wait to
