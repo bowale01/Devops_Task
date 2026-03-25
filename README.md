@@ -1,6 +1,5 @@
 # Devops_Task
-DevOps Technical Assessment
-DevOps Technical Assessment
+
 This is not a test but rather a conversation starter. Have fun with the task, and we can’t wait to
 discuss your work during our meeting.
 Deploy to Kubernetes cluster one of the applications prescribed in this task ("Applications set"
